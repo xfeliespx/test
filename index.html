@@ -21,17 +21,15 @@
 
     <button onclick="compute()">Calcular interés</button>
     <span id="results"></span><br><br>
-    <footer> Testing <p id="current_date"></p></footer>
+    <footer>Testing &copy;<p id="current_date"></p></footer>
     </div>
     </center>
     <script>
         var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = today.getFullYear();
-
-today = mm + '-' + dd + '-' + yyyy;
-document.write(today);
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+        today = mm + '-' + dd + '-' + yyyy;
         document.getElementById("current_date").innerHTML = today;
     </script>
 </body>
