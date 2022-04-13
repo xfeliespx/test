@@ -2,14 +2,14 @@
 function compute()
 {
     if(principal.value < 1){
-        alert("Amount has to be a positive quantity")
+        alert("Debes ingresar un valor")
         principal.focus()
         return
     }
     let interest = principal.value * years.value * rate.value / 100;
     yearInFuture = new Date().getFullYear() + parseInt(years.value);
     result = document.getElementById("result")
-    result.innerHTML = "<p>If you deposit <mark>"+ principal.value +"</mark>,<br>an interest rate of <mark>" + rate.value + "%</mark>.<br>You will receive an amount of <mark>"+interest+"</mark>,<br>in the year <mark>"+yearInFuture+"</mark></p>";
+    result.innerHTML = "<p>si depositas <mark>"+ principal.value +"</mark>,<br>una tasa de interés de <mark>" + rate.value + "%</mark>.<br>Recibirás una cantidad de <mark>"+interest+"</mark>,<br>en el año <mark>"+yearInFuture+"</mark></p>";
 
 }
 
